@@ -3,10 +3,16 @@ let arrowRotate = 0
 const selectedTag = document.querySelector(".select_tag>p")
 const selectOption = document.querySelector(".tag_option")
 let selectedValue = null
+const wrap = document.querySelector(".wrap")
+const backgroundImage = ["light_seoul.png","dark_seoul.webp"]
+
+
+wrap.setAttribute("style",`background-image:url(../img/${backgroundImage[Math.floor(Math.random() * 2)]})`)
+
 
 document.querySelector(".select_tag").addEventListener("click",()=>{
     if(dropdownBool){
-    selectOption.setAttribute("style","height:207px;")
+    selectOption.setAttribute("style","padding-bottom:207px;")
     dropdownBool = false
     }else{
         closeDown()
@@ -18,7 +24,7 @@ document.querySelector(".select_tag").addEventListener("click",()=>{
         document.querySelector(".select_tag>i").setAttribute("style",`transform: rotate(${arrowRotate}deg);`)
     })
 
-        console.log(document.querySelectorAll(".tag_option>li"))
+        // console.log(document.querySelectorAll(".tag_option>li"))
 
         document.querySelectorAll(".tag_option>li").forEach(el=>{
             el.addEventListener("click",()=>{
@@ -55,11 +61,11 @@ document.querySelector(".select_tag").addEventListener("click",()=>{
             })
         })
 
-        const closeDown = () => {
-            selectOption.setAttribute("style","height:0px;")
-            dropdownBool = true
-        }
-
+        
+const closeDown = () => {
+    selectOption.setAttribute("style","padding-bottom:0px;")
+    dropdownBool = true
+}
 document.querySelector(".search_button").addEventListener("click",()=>{
     if(!selectedValue){
         alert("검색 태그를 선택해주세요")
