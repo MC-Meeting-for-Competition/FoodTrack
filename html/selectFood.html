@@ -7,22 +7,56 @@
     <title>서울특별시 맛집</title>
     <link rel="stylesheet" href="../css/selectFood_style.css">
     <link rel="shortcut icon" type="image/x-icon" href="../img/logo.png">
+    <script src="https://kit.fontawesome.com/966d76abc0.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="wrap">
-        <header>
-            <a class="logo" href="main.html">
-                <img src="../img/logo.png" alt="logo">
-            </a>
-            <a class="login_button" href="login.html">
-                <img src="../img/login_user.png" alt="">
-                <p>로그인</p>
+        <header class="haeder">
+            <img id="logo-img" src="/img/logo.png" alt="logo">
+            <a href="#">
+                <div class="login">
+                    <img id="user-img" src="/img/login_user.png" alt="user">
+                    <p>로그인</p>
+                </div>
             </a>
         </header>
-        <div class="main-content">
-            <div id="first-list">
-                <img src="../img/정성돈가스.png" alt="">
+        <div class="container">
+            <div class="main-content">
+                <!-- 첫번째 -->
+                <div id="first-item">
+                    <div id="img-text">
+                        <img id="first-item-img" src="/img/정성돈가스.png" alt="">
+                        <div id="first-item-text">
+                            <h4>용산구</h4>
+                            <h1>정성돈가스</h1>
+                            <p id="hashtag">#돈가스 #용산구 맛집 #돈가스정식</p>
+                        </div>
+                    </div>
+                    <div id="first-item-icon">
+                        <div id="icon-img">
+                            <i id="star-img" class="fa-solid fa-star"></i>
+                            <i id="heart-img" class="fa-solid fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- 두번째 -->
+                <div id="first-item">
+                    <div id="img-text">
+                        <img id="first-item-img" src="/img/구름카츠.png" alt="">
+                        <div id="first-item-text">
+                            <h4>용산구</h4>
+                            <h1>구름카츠</h1>
+                            <p id="hashtag">#돈가스 #용산구 맛집 #돈가스정식</p>
+                        </div>
+                    </div>
+                    <div id="first-item-icon">
+                        <div id="icon-img">
+                            <i id="star-img" class="fa-solid fa-star"></i>
+                            <i id="heart-img" class="fa-solid fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
