@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,15 +6,17 @@
     text-decoration: none;
     list-style-type: none;
 }
-.wrap{
+
+.wrap {
     height: 100vh;
     width: 100vw;
     background-image: url(../img/main_background.png);
     background-size: cover;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     background-position: center;
 }
-header{
+
+header {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -26,10 +28,11 @@ header{
     background-color: white;
 }
 
-.logo>img{
+.logo>img {
     width: 80px;
 }
-.login_button{
+
+.login_button {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -37,16 +40,20 @@ header{
     border-radius: 100px;
     padding: 10px 20px;
 }
-.login_button>*{
+
+.login_button>* {
     margin: 0px 5px;
 }
-.login_button>img{
+
+.login_button>img {
     height: 20px;
 }
-.login_button>p{
+
+.login_button>p {
     font-size: 20px;
 }
-main{
+
+main {
     width: 100vw;
     height: 80vh;
     display: flex;
@@ -54,7 +61,8 @@ main{
     align-items: center;
     flex-direction: column;
 }
-.search_wrap{
+
+.search_wrap {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,7 +73,8 @@ main{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
-.select_tag{
+
+.select_tag {
     width: 100%;
     height: 100%;
     display: flex;
@@ -73,31 +82,37 @@ main{
     align-items: center;
     padding: 10px 0px;
 }
-.select_tag:hover{
+
+.select_tag:hover {
     cursor: pointer;
 }
-.select_tag>i{
+
+.select_tag>i {
     margin-right: 10px;
     transition: 0.5s all ease-in-out;
 }
 
-.select_tag>p{
+.select_tag>p {
     color: gray;
 }
-.search_button{
+
+.search_button {
     border-left: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.search_button>img{
+
+.search_button>img {
     width: 50px;
     padding: 10px;
 }
-.search_button>img:hover{
+
+.search_button>img:hover {
     cursor: pointer;
 }
-.tag_option{
+
+.tag_option {
     width: 20%;
     background-color: white;
     overflow: hidden;
@@ -109,12 +124,14 @@ main{
     position: absolute;
     top: 1px;
 }
-.tag_option>li{
+
+.tag_option>li {
     padding: 10px;
     font-weight: bold;
     transition: 0.2s all ease-in-out;
 }
-.tag_option>li:hover{
+
+.tag_option>li:hover {
     background-color: rgb(182, 182, 182);
     cursor: pointer;
 }
