@@ -56,15 +56,18 @@ body {
   margin: 50px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
+/* first-item */
 #first-item {
   border: 1px solid black;
   border-radius: 15px;
   display: flex;
   width: 90%;
   height: 110px;
-  margin: 20px 0px 20px 0px;
+  margin: 20px 0px 10px 0px;
   background-color: #FFF3F3;
   display: flex;
   justify-content: space-between;
@@ -97,7 +100,20 @@ body {
   margin-right: 20px;
 }
 
-#first-item-icon>img {
-  width: 30px;
-  height: 25px;
+#icon-img {
+  margin-bottom: 10px;
 }
+
+#star-img {
+  font-size: 35px;
+  color: rgb(194, 194, 194);
+  cursor: pointer;
+}
+
+#heart-img {
+  font-size: 35px;
+  color: rgb(194, 194, 194);
+  cursor: pointer;
+}
+
+/* second-item */
